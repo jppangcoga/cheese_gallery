@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+
+{% block content%}
+<h1> {{ cheese_type_template }} </h1>
+<ul> 
+    {% for cheese in cheese_type_template1 %}
+    <li><a href="/cheese/{{ cheese_type_template }}/{{ loop.index - 1 }}">{{ cheese.name }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block content%}
+
+<h1>{{ profile.name }}</h1>
+<center><img src="{{ profile.url }}" height="250" width="400"></center>
+<p>{{ profile.description }}</p> 
+<ul>
+    <li>Fat content:  {{ profile.fat_content }}</li>
+    <li>Source of milk: {{ profile.source_of_milk }}</li>
+</ul>
+{% endblock %}
